@@ -42,17 +42,20 @@ table {
 	border-spacing: 0;
 }
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif; 
+}
+/************************************************ NAV */
+.header {
+	opacity: 0.8;	
 }
 
-
-/************************************************ NAV */
 /************************************************ HEADER */
 /************************************************ BODY */
 /************************************************ FOOTER */
