@@ -220,8 +220,13 @@ a {
   }
 }
 .header h1 {
+  font-family: 'Pacifico', cursive;
   font-size: 6rem;
   padding-bottom: 40px;
+}
+.header h1 span {
+  font-family: 'Nunito', sans-serif;
+  font-size: 4rem;
 }
 /************************************************ BODY */
 .container {
@@ -233,5 +238,22 @@ a {
   .container {
     padding: 0 5%;
   }
+}
+.section {
+  width: 70%;
+  margin: 45px auto;
+  display: flex;
+  border: 1px solid #232c23;
+  box-shadow: 1px 1px 5px #232c23;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.section .box {
+  padding: 40px;
+}
+.section .box .box-title {
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 /************************************************ FOOTER */
