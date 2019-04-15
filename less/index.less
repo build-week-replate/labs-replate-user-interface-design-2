@@ -59,6 +59,8 @@ a {
 }
 
 @import './tabs.less';
+@import './variables.less';
+@import './footer.less';
 
 
 /************************************************ NAV */
@@ -90,50 +92,57 @@ a {
 	justify-content: flex-end;
 	align-items: flex-end;
 	z-index: 1;
-}
-@media only screen and (min-width: 320px) and (max-width: 732px) {
-	.header .content {
-	  text-align: center;
-	  justify-content: center;
-	  align-items: center;
-	  padding: 90px 10px 10px 10px;
+
+	@media only screen and (min-width: 320px) and (max-width: 732px) {	
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		padding: 90px 10px 10px 10px;
 	}
 }
+
 .header h1 {
       font-family: 'Pacifico', cursive;
 	font-size: 6rem;
 	padding-bottom: 40px;
+
+	span {
+		font-family:'Nunito', sans-serif;
+		font-size: 4rem;
+	}
 }
-.header h1 span {
-      font-family:'Nunito', sans-serif;
-      font-size: 4rem;
-}
-/************************************************ BODY */
+/************************************ BODY */
 .container {
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
-    }
-@media only screen and (min-width: 320px) and (max-width: 732px) {
-      .container {
-            padding: 0 5%;
-      }
-}
-.section {
-      width: 70%;
-      margin: 45px auto;
-      display: flex;
-      border: 1px solid #232c23;
-      box-shadow: 1px 1px 5px #232c23;
-      border-radius: 10px;
-      overflow: hidden;
-      .box {
-        padding: 40px;
-        .box-title {
-          font-size: 24px;
-          padding-bottom: 10px;
-          font-weight: bold;
-        }
-      }
-    }
-/************************************************ FOOTER */
+
+	.section {
+		width: 70%;
+		margin: 45px auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		border: 3px solid #232c23;
+		box-shadow: 1px 1px 5px #232c23;
+		border-radius: 10px;
+		overflow: hidden;
+		.box {
+			padding: 40px;
+		.box-title {
+			font-size: 24px;
+			padding-bottom: 10px;
+			font-weight: bold;
+		  }
+		}
+	} //section
+	@media only screen and (min-width: 320px) and (max-width: 732px) {
+		.container {
+			padding: 0 5%;
+		}
+		
+	}
+
+
+
+}//container
