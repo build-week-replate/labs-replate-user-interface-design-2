@@ -140,9 +140,15 @@ a {
 }
 .header {
   font-size: 2rem;
+  border-bottom: 3px solid #232c23;
+  box-shadow: 4px 4px 26px #232c23;
 }
 .header a {
   margin-top: 10px;
+}
+.header .navbar {
+  border-bottom: 3px solid #232c23;
+  box-shadow: 4px 4px 26px #232c23;
 }
 .header h1 {
   font-family: 'Pacifico', cursive;
@@ -158,7 +164,7 @@ a {
 }
 .header .headIndex {
   height: 400px;
-  background: url("../img/food.jpg");
+  background: url("../img/fooddark.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -168,8 +174,8 @@ a {
   font-size: 3rem;
   font-weight: bold;
   text-align: right;
-  text-shadow: 4px 4px 26px white, 0 0 20px white, 0 0 15px white, 0 0 10px white;
-  color: #232c23;
+  text-shadow: 4px 4px 26px #232c23, 0px 0px 10px #232c23;
+  color: white;
   padding: 90px 20px 20px 0;
   display: flex;
   flex-direction: column;
@@ -241,6 +247,8 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: #8bc53e;
+  border-top: 3px solid #232c23;
+  box-shadow: -4px -4px 20px #232c23;
 }
 .foot address {
   padding-bottom: 20px;
@@ -269,7 +277,7 @@ a {
 }
 .container .section {
   width: 100%;
-  margin: 45px auto;
+  margin: 85px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
