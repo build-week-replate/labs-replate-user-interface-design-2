@@ -1,3 +1,56 @@
+.header {
+  font-size: 2rem;
+  border-bottom: 3px solid #232c23;
+  box-shadow: 4px 4px 26px #232c23;
+}
+.header a {
+  margin-top: 10px;
+}
+.header .navbar {
+  border-bottom: 3px solid #232c23;
+  box-shadow: 4px 4px 26px #232c23;
+}
+.header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 6rem;
+  padding-bottom: 40px;
+}
+.header h1 span {
+  font-family: 'Nunito', sans-serif;
+  font-size: 4rem;
+}
+.header button {
+  margin-top: 30px;
+}
+.header .headIndex {
+  height: 400px;
+  background: url("../img/foodshadow.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header .content {
+  height: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: right;
+  text-shadow: 4px 4px 26px #232c23, 0px 0px 10px #232c23;
+  color: white;
+  padding: 90px 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 1;
+}
+@media only screen and (min-width: 320px) and (max-width: 732px) {
+  .header .content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 10px 10px 10px;
+  }
+}
 html,
 body,
 div,
@@ -138,57 +191,48 @@ body {
 a {
   height: 100%;
 }
-.header {
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Open sans', sans-serif;
   font-size: 2rem;
-  border-bottom: 3px solid #232c23;
-  box-shadow: 4px 4px 26px #232c23;
 }
-.header a {
-  margin-top: 10px;
-}
-.header .navbar {
-  border-bottom: 3px solid #232c23;
-  box-shadow: 4px 4px 26px #232c23;
-}
-.header h1 {
+.container h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 6rem;
-  padding-bottom: 40px;
-}
-.header h1 span {
-  font-family: 'Nunito', sans-serif;
   font-size: 4rem;
+  margin: 0 auto;
+  padding: 40px 0;
 }
-.header button {
-  margin-top: 30px;
-}
-.header .headIndex {
-  height: 400px;
-  background: url("../img/fooddark.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.header .content {
-  height: 100%;
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: right;
-  text-shadow: 4px 4px 26px #232c23, 0px 0px 10px #232c23;
-  color: white;
-  padding: 90px 20px 20px 0;
+.container .cta {
+  width: 100%;
+  margin: 105px auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  z-index: 1;
+  justify-content: center;
+}
+.container .section {
+  width: 100%;
+  margin: 105px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid #232c23;
+  box-shadow: 1px 1px 15px #232c23;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container .section .box {
+  padding: 40px;
+}
+.container .section .box .box-title {
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 @media only screen and (min-width: 320px) and (max-width: 732px) {
-  .header .content {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 90px 10px 10px 10px;
+  .container .container {
+    padding: 0 5%;
   }
 }
 .tabs {
@@ -253,49 +297,4 @@ a {
 .foot address {
   padding-bottom: 20px;
   color: #232c23;
-}
-/************************************ BODY */
-.container {
-  max-width: 900px;
-  width: 100%;
-  margin: 0 auto;
-  font-family: 'Open sans', sans-serif;
-  font-size: 2rem;
-}
-.container h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 4rem;
-  margin: 0 auto;
-  padding: 40px 0;
-}
-.container .cta {
-  width: 100%;
-  margin: 65px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.container .section {
-  width: 100%;
-  margin: 85px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 3px solid #232c23;
-  box-shadow: 1px 1px 15px #232c23;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.container .section .box {
-  padding: 40px;
-}
-.container .section .box .box-title {
-  font-size: 24px;
-  padding-bottom: 10px;
-  font-weight: bold;
-}
-@media only screen and (min-width: 320px) and (max-width: 732px) {
-  .container .container {
-    padding: 0 5%;
-  }
 }
