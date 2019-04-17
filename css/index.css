@@ -1,0 +1,276 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/********************************************** HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  height: 100%;
+}
+.tabs {
+  width: 100%;
+}
+.tabs .tabs-items {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.tabs .tabs-item {
+  display: none;
+  width: 75%;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
+.tabs .tabs-links {
+  display: flex;
+}
+.tabs .tabs-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  border-right: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: #8bc53e;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  border-right: 1px solid #232c23;
+  background-color: white;
+  color: black;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: white;
+}
+.foot {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8bc53e;
+}
+.foot address {
+  padding-bottom: 20px;
+  color: #232c23;
+}
+/************************************************ NAV */
+.header {
+  font-size: 2rem;
+}
+.header a {
+  margin-top: 10px;
+}
+/************************************************ HEADER */
+.headIndex {
+  height: 400px;
+  background: url("../img/food.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header .content {
+  height: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: right;
+  text-shadow: 4px 4px 26px white, 0 0 20px white, 0 0 15px white, 0 0 10px white;
+  color: #232c23;
+  padding: 90px 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 1;
+}
+@media only screen and (min-width: 320px) and (max-width: 732px) {
+  .header .content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 10px 10px 10px;
+  }
+}
+.header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 6rem;
+  padding-bottom: 40px;
+}
+.header h1 span {
+  font-family: 'Nunito', sans-serif;
+  font-size: 4rem;
+}
+/************************************ BODY */
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container .section {
+  width: 70%;
+  margin: 45px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid #232c23;
+  box-shadow: 1px 1px 5px #232c23;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container .section .box {
+  padding: 40px;
+}
+.container .section .box .box-title {
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+@media only screen and (min-width: 320px) and (max-width: 732px) {
+  .container .container {
+    padding: 0 5%;
+  }
+}
