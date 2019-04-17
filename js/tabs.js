@@ -22,14 +22,12 @@ class TabLink {
 
 class TabItem {
   constructor(banana) {
-    // Assign this.element to the passed in element
     this.banana = banana;
-    console.log(this.banana);
+    // console.log(this.banana);
   }
 
   select() {
     const items = document.querySelectorAll('.tabs-item');
-
     // Remove the class "tabs-item-selected" from each element
     Array.from(items).forEach(function (banana) {
       banana.classList.remove('tabs-item-selected');
