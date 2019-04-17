@@ -1,8 +1,8 @@
 class Navbar {
       constructor(element) {
             this.element = element;
-            this.button = this.element.querySelector('.dropdown-button');
-            this.content = this.element.querySelector('.dropdown-content');
+            this.button = this.element.querySelector('.hamburger');
+            this.content = this.element.querySelector('.nav-content');
             // Add a click handler to the button reference and call the toggleContent method.
             this.button.addEventListener('click', () => this.toggleContent());
             console.log('click');

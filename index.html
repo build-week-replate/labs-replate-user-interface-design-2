@@ -7,7 +7,6 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/bootstrap3.css">
       <link rel="stylesheet" href="css/index.css">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -18,27 +17,26 @@
 
 <body>
       <div class="header">
-            <nav class="navbar navbar-default">
-                  <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                              <span class="sr-only">Toggle navigation</span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                        </button>
-                        <img src="img/rePlate-logo-white.png" class="navbar-brand">
-                  </div>
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                              <li class="active"><a href="index.html">Home</a></li>
-                              <li><a href="about.html">About</a></li>
-                              <li><a href="#">Contact</a></li>
-                              <li><a href="#">Login</a></li>
-                              <li><a href="#">Sign Up <i class="fas fa-plus"></i></a></li>
-                        </ul>
-                  </div><!-- /.navbar-collapse -->
-            </nav>
+            <nav class="navbar dropdown">
+                        <img src="img/rePlate-logo-white.png" class="navbar-brand" href="#">
+                              <!--button hidden until collapse-->
+                        <div class="nav" data-target="1">
+                              <ul class="nav nav-content">
+                                    <li class="active"><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Sign Up <i class="fas fa-plus"></i></a></li>
+                              </ul>
+                        </div><!-- navbar that collapses -->
+                        <div class="hidden-until-collapsed">
+                              <button class="hamburger" data-toggle="collapse" data-target="1" aria-expanded="false">
+                                    <div class="burger"></div>
+                                    <div class="burger"></div>
+                                    <div class="burger"></div>
+                              </button>
+                        </div>
+                  </nav>
             <div class="headIndex">
                   <div class="content">
                         <h1><span>re</span>cycle | <span>re</span>duce | <span>re</span>Plate</h1>
@@ -77,7 +75,7 @@
                                           no one eats coleslaw but what else would you serve with fried cod and chips?<br>
                                           you told Benny to order a dozen and instead he ordered 12 dozen?<br>
                                           </p>
-                                          <button>i hate to waste</button>
+                                          <button><a href="#">i hate to waste</a></button>
                                           
                                     </div>
                               </div>
@@ -88,7 +86,7 @@
                                           raising kids is too big a commitment but you still want to positively contribute to society instead of leeching off of its resources until you die?<br>
                                           you see the homeless guy at the groccery store every time you're there and you know his life is wretched but money is prescious, how can you ever pay off loans for an arts degree you can't use and a prius you can't afford?<br>
                                           </p>
-                                          <button>yaaasss</button>
+                                          <button><a href="#">yaaasss</a></button>
                                     </div>
                               </div>
                               <div class="tabs-item" data-tab="3">
@@ -97,7 +95,7 @@
                                           <p> food pantries | homeless shelters | halfway houses | churches | governer dinners | montessori schools | urban gardens | compost piles | pig farms | white house<br>
                                           sign a waver because sometimes food makes people sick and if you sue us you'll ruin it for everybody else<br>
                                           </p>
-                                          <button>i'm offended</button>
+                                          <button><a href="#">i'm offended</a></button>
                                     </div>
                               </div>
                               
