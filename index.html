@@ -17,26 +17,29 @@
 
 <body>
       <div class="header">
-            <nav class="navbar dropdown">
-                        <img src="img/rePlate-logo-white.png" class="navbar-brand" href="#">
-                              <!--button hidden until collapse-->
-                        <div class="nav" data-target="1">
-                              <ul class="nav nav-content">
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Login</a></li>
-                                    <li><a href="#">Sign Up <i class="fas fa-plus"></i></a></li>
-                              </ul>
-                        </div><!-- navbar that collapses -->
-                        <div class="hidden-until-collapsed">
-                              <button class="hamburger" data-toggle="collapse" data-target="1" aria-expanded="false">
-                                    <div class="burger"></div>
-                                    <div class="burger"></div>
-                                    <div class="burger"></div>
-                              </button>
-                        </div>
-                  </nav>
+            <nav class="dropdown">
+                  <img src="img/rePlate-logo-white.png" class="navbar-brand" href="#">
+                        <!--button hidden until collapse-->
+                  <div class="nav-content" data-target="1">
+                        <ul class="navItem">
+                              <li class="active"><a href="index.html">Home</a></li>
+                              <li><a href="about.html">About</a></li>
+                              <li><a href="#">Login</a></li>
+                              <li><a href="#">Sign Up</i></a></li>
+                        </ul>
+                        <ul class="dropdown-content">
+                              <li class="dropdown-link"><a href="index.html">Home</a></li>
+                              <li class="dropdown-link"><a href="about.html">About</a></li>
+                              <li class="dropdown-link"><a href="#">Login</a></li>
+                              <li class="dropdown-link"><a href="#">Sign Up</i></a></li>
+                        </ul>
+                  </div><!-- navbar that collapses -->
+                  <button class="hamburger" data-toggle="collapse" data-target="1" aria-expanded="false">
+                        <div class="burger"></div>
+                        <div class="burger"></div>
+                        <div class="burger"></div>
+                  </button>
+            </nav>
             <div class="headIndex">
                   <div class="content">
                         <h1><span>re</span>cycle | <span>re</span>duce | <span>re</span>Plate</h1>

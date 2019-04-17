@@ -5,14 +5,15 @@
 }
 .header a {
   color: white;
+  font-size: 3rem;
   text-decoration: none;
   margin-top: 10px;
-  margin-left: 40px;
+  margin-left: 30px;
 }
-.header a :hover {
+.header a:hover {
   color: #232c23;
 }
-.header .navbar {
+.header nav {
   border-bottom: 3px solid #232c23;
   box-shadow: 4px 4px 20px #232c23;
   color: white;
@@ -20,36 +21,32 @@
   justify-content: space-between;
   background-color: #8bc53e;
 }
-.header .navbar .nav {
+.header nav .navItem {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 0 10px;
+  margin: 40px 10px 0 0;
 }
 @media only screen and (min-width: 733px) and (max-width: 959px), only screen and (min-width: 320px) and (max-width: 732px) {
-  .header .navbar .nav {
+  .header nav .navItem {
     display: none;
   }
 }
-.header .navbar .navbar-brand {
+.header nav .navbar-brand {
   margin: 0 20px;
-  padding: 20px 0;
+  padding: 15px 15px;
 }
-.header .navbar .hidden-until-collapsed {
+.header nav .hamburger {
   display: none;
 }
 @media only screen and (min-width: 733px) and (max-width: 959px), only screen and (min-width: 320px) and (max-width: 732px) {
-  .header .navbar .hidden-until-collapsed {
+  .header nav .hamburger {
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
-    margin: 0 30px 30px 0;
+    margin: 30px 30px 30px 0;
   }
-}
-.header .navbar nav {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
 }
 .header h1 {
   font-family: 'Pacifico', cursive;
@@ -125,9 +122,9 @@
   cursor: pointer;
 }
 .dropdown .dropdown-content {
-  width: 80%;
+  width: 20%;
   position: absolute;
-  background-color: white;
+  background-color: #8bc53e;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,9 +134,17 @@
 .dropdown .dropdown-hidden {
   display: none;
 }
-.expandable {
-  transition: all 0.5s ease-in-out;
-  transform-origin: right top;
+.dropdown .dropdown-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: #232c23;
+}
+.dropdown .dropdown-link:hover {
+  color: white;
+  background-color: #232c23;
 }
 .containerAbout {
   position: relative;
@@ -337,7 +342,7 @@ a {
 }
 .container {
   max-width: 900px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   font-family: 'Open sans', sans-serif;
   font-size: 2rem;
@@ -469,6 +474,9 @@ a {
   background-color: #8bc53e;
   border-top: 3px solid #232c23;
   box-shadow: -4px -4px 20px #232c23;
+}
+.foot .footContent {
+  margin-top: 20px;
 }
 .foot address {
   padding-bottom: 20px;
