@@ -7,7 +7,6 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/bootstrap3.css">
       <link rel="stylesheet" href="css/index.css">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -17,26 +16,25 @@
 
 <body>
       <div class="header about">
-            <nav class="navbar navbar-default dropdown">
-                  <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed dropdown-button" data-toggle="collapse"
-                              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                        </button>
-                        <img src="img/rePlate-logo-white.png" class="navbar-brand" href="#">
-                  </div>
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right dropdown-content">
+            <nav class="navbar dropdown">
+                  <img src="img/rePlate-logo-white.png" class="navbar-brand" href="#">
+                   <!--button hidden until collapse-->
+                  <div class="nav" data-target="1">
+                        <ul class="nav nav-content">
                               <li><a href="index.html">Home</a></li>
                               <li class="active"><a href="about.html">About</a></li>
                               <li><a href="#">Contact</a></li>
                               <li><a href="#">Login</a></li>
                               <li><a href="#">Sign Up <i class="fas fa-plus"></i></a></li>
                         </ul>
-                  </div><!-- navbar-collapse -->
+                  </div><!-- navbar that collapses -->
+                  <div class="hidden-until-collapsed">
+                        <button class="hamburger" data-toggle="collapse" data-target="1" aria-expanded="false">
+                              <div class="burger"></div>
+                              <div class="burger"></div>
+                              <div class="burger"></div>
+                        </button>
+                  </div>
             </nav>
             <div class="headAbout">
                   <div class="content">
