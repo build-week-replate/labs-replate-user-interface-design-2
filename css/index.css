@@ -86,6 +86,9 @@
   .header .headIndex {
     height: 300px;
   }
+  .header .headIndex h1 {
+    display: none;
+  }
 }
 .header .headAbout {
   height: 400px;
