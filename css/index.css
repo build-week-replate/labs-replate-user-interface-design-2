@@ -134,6 +134,7 @@
   top: 80px;
   width: 200px;
   border: 2px solid #232c23;
+  box-shadow: 2px 2px 8px #232c23;
   text-align: center;
   position: absolute;
   background-color: #8bc53e;
@@ -390,6 +391,10 @@ a {
 .container .cta .ctaContent {
   line-height: 3rem;
 }
+.container .cta .ctaContent p {
+  padding: 10px 0;
+  border-top: 3px solid #8bc53e;
+}
 .container .section {
   width: 100%;
   margin: 105px auto;
@@ -413,6 +418,10 @@ a {
   .container .container {
     padding: 0 5%;
   }
+}
+.container .tabs-item-description p {
+  padding: 10px 0;
+  border-top: 3px solid #8bc53e;
 }
 .tabs {
   width: 100%;
