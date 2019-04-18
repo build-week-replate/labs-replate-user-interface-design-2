@@ -438,10 +438,6 @@ a {
     padding: 0 5%;
   }
 }
-.container .tabs-item-description p {
-  padding: 10px 0;
-  border-top: 3px solid #8bc53e;
-}
 .tabs {
   width: 100%;
 }
@@ -496,6 +492,10 @@ a {
 }
 .tabs .tabs-item-selected .tabs-item-description a:hover {
   color: #ea6c0c;
+}
+.tabs .tabs-item-selected .tabs-item-description p {
+  padding: 10px 0;
+  border-top: 3px solid #8bc53e;
 }
 .tabs .tabs-links {
   display: flex;
