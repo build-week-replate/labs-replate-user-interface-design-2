@@ -20,7 +20,6 @@
 
 ## Lambda web19
 
-## labs-replate-user-interface-design-2
 
 
-&amp;copy 2019 MIT
+&copy;2019 MIT
