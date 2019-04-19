@@ -70,6 +70,9 @@
   padding: 7px 20px;
   margin-bottom: 10px;
 }
+.header button:focus {
+  outline: none;
+}
 .header button div {
   width: 35px;
   height: 5px;
@@ -437,6 +440,28 @@ a {
   .container .container {
     padding: 0 5%;
   }
+}
+.member {
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+}
+form input {
+  margin: 30px 60px;
+  padding: 20px;
+  border: none;
+  box-shadow: 2px 2px 5px #232c23;
+}
+form input:focus {
+  outline: none;
+}
+form input[type=text] {
+  font-size: 2rem;
 }
 .tabs {
   width: 100%;
