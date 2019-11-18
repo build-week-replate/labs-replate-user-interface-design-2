@@ -1,4 +1,4 @@
-# Replate
+# Replate - Landing Page
 
 ![replate logo](img/rePlate-logo-white.png)
 
@@ -14,12 +14,10 @@
 - achieved responsive design for multiple screen widths
 - applied javascript with event listeners for dom manipulation to improve functionality of site
 - implemented learnt git flow and pomodoro method to maintain productivity 
-- debug debug debug
+
 
 ## https://build-week-replate.github.io/labs-replate-user-interface-design-2/
 
 ## Lambda web19
-
-
 
 &copy;2019 MIT
